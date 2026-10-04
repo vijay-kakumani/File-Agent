@@ -1,0 +1,1423 @@
+[
+  {
+    "id": "QA-GOLD-04",
+    "category": "DIRECT_FACT",
+    "question": "What was the internship duration?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "The internship duration was 8 weeks.",
+    "expected_keywords": [
+      "8 weeks"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": true
+  },
+  {
+    "id": "Q002",
+    "category": "DIRECT_FACT",
+    "question": "What university degree is listed on Vijay's resume?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "Bachelor of Technology in Computer Science",
+    "expected_keywords": [
+      "Bachelor of Technology",
+      "Computer Science"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q003",
+    "category": "DIRECT_FACT",
+    "question": "What is the sprint duration in Scrum according to the Agile guide?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "2 weeks",
+    "expected_keywords": [
+      "2 weeks"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q004",
+    "category": "DIRECT_FACT",
+    "question": "What database does CampusConnect use?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "PostgreSQL",
+    "expected_keywords": [
+      "PostgreSQL"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q005",
+    "category": "DIRECT_FACT",
+    "question": "Who was the internship supervisor at TechCorp Solutions?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "Dr. Aris Thorne",
+    "expected_keywords": [
+      "Aris Thorne"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q006",
+    "category": "DIRECT_FACT",
+    "question": "What is the total allocated budget for Q3?",
+    "target_document": "Q3_Budget_Summary.pdf",
+    "active_document": "Q3_Budget_Summary.pdf",
+    "expected_answer": "$45,000",
+    "expected_keywords": [
+      "45,000"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q007",
+    "category": "INFORMAL_FACT",
+    "question": "how long was the internship?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "8 weeks",
+    "expected_keywords": [
+      "8 weeks"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q008",
+    "category": "INFORMAL_FACT",
+    "question": "what db is used?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "PostgreSQL",
+    "expected_keywords": [
+      "PostgreSQL"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q009",
+    "category": "INFORMAL_FACT",
+    "question": "how long are sprints?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "2 weeks",
+    "expected_keywords": [
+      "2 weeks"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q010",
+    "category": "INFORMAL_FACT",
+    "question": "what is the supervisor's name?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "Dr. Aris Thorne",
+    "expected_keywords": [
+      "Aris Thorne"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q011",
+    "category": "INFORMAL_FACT",
+    "question": "what is the cloud certificate id?",
+    "target_document": "AWS_Cloud_Practitioner_Certificate.pdf",
+    "active_document": "AWS_Cloud_Practitioner_Certificate.pdf",
+    "expected_answer": "AWS-CCP-987654321",
+    "expected_keywords": [
+      "AWS-CCP-987654321"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q012",
+    "category": "INFORMAL_FACT",
+    "question": "what school did he go to?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "State University",
+    "expected_keywords": [
+      "State University"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "QA-GOLD-02",
+    "category": "LIST_EXTRACTION",
+    "question": "What technologies do I know?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "Python, JavaScript, SQL, React, FastAPI, Node.js, PostgreSQL, SQLite",
+    "expected_keywords": [
+      "Python",
+      "JavaScript",
+      "React",
+      "FastAPI"
+    ],
+    "expected_mode": "LIST",
+    "is_golden": true
+  },
+  {
+    "id": "Q014",
+    "category": "LIST_EXTRACTION",
+    "question": "List the key features of CampusConnect",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "Course-Specific Collaboration Channels, Real-Time Messaging, File Uploads, Peer Rating, Role-Based Access Control",
+    "expected_keywords": [
+      "Collaboration Channels",
+      "Messaging",
+      "File Uploads"
+    ],
+    "expected_mode": "LIST",
+    "is_golden": false
+  },
+  {
+    "id": "Q015",
+    "category": "LIST_EXTRACTION",
+    "question": "List the core Scrum roles",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Product Owner, Scrum Master, Development Team",
+    "expected_keywords": [
+      "Product Owner",
+      "Scrum Master",
+      "Development Team"
+    ],
+    "expected_mode": "LIST",
+    "is_golden": false
+  },
+  {
+    "id": "Q016",
+    "category": "LIST_EXTRACTION",
+    "question": "What machine learning topics are covered in the notes?",
+    "target_document": "Machine_Learning_Notes.txt",
+    "active_document": "Machine_Learning_Notes.txt",
+    "expected_answer": "Supervised Learning, Linear Regression, Gradient Descent, Neural Networks",
+    "expected_keywords": [
+      "Supervised Learning",
+      "Linear Regression",
+      "Gradient Descent",
+      "Neural Networks"
+    ],
+    "expected_mode": "LIST",
+    "is_golden": false
+  },
+  {
+    "id": "Q017",
+    "category": "LIST_EXTRACTION",
+    "question": "What ceremonies are observed in Scrum?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Sprint Planning, Daily Standup, Sprint Review, Sprint Retrospective",
+    "expected_keywords": [
+      "Sprint Planning",
+      "Daily Standup",
+      "Sprint Review",
+      "Sprint Retrospective"
+    ],
+    "expected_mode": "LIST",
+    "is_golden": false
+  },
+  {
+    "id": "Q018",
+    "category": "LIST_EXTRACTION",
+    "question": "what projects i did",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "CampusConnect and Local AI Document Agent",
+    "expected_keywords": [
+      "CampusConnect",
+      "Local AI Document Agent"
+    ],
+    "expected_mode": "LIST",
+    "is_golden": false
+  },
+  {
+    "id": "QA-GOLD-05",
+    "category": "YES_NO_VERIFICATION",
+    "question": "Does the resume mention Python?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "Yes, Python is mentioned.",
+    "expected_keywords": [
+      "Python"
+    ],
+    "expected_boolean": true,
+    "expected_mode": "YES_NO",
+    "is_golden": true
+  },
+  {
+    "id": "Q020",
+    "category": "YES_NO_VERIFICATION",
+    "question": "Is Docker mentioned?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "No, Docker is not mentioned in the resume.",
+    "expected_keywords": [
+      "Docker"
+    ],
+    "expected_boolean": false,
+    "expected_mode": "YES_NO",
+    "is_golden": false
+  },
+  {
+    "id": "Q021",
+    "category": "YES_NO_VERIFICATION",
+    "question": "Does CampusConnect support file uploads?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "Yes, CampusConnect supports file uploads of PDF and DOCX formats.",
+    "expected_keywords": [
+      "upload"
+    ],
+    "expected_boolean": true,
+    "expected_mode": "YES_NO",
+    "is_golden": false
+  },
+  {
+    "id": "Q022",
+    "category": "YES_NO_VERIFICATION",
+    "question": "Does Scrum have 6-month sprints?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "No, sprint duration is 2 weeks.",
+    "expected_keywords": [
+      "6-month"
+    ],
+    "expected_boolean": false,
+    "expected_mode": "YES_NO",
+    "is_golden": false
+  },
+  {
+    "id": "Q023",
+    "category": "YES_NO_VERIFICATION",
+    "question": "Does the internship report mention latency reduction?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "Yes, it reduced search latency by 40%.",
+    "expected_keywords": [
+      "latency",
+      "40%"
+    ],
+    "expected_boolean": true,
+    "expected_mode": "YES_NO",
+    "is_golden": false
+  },
+  {
+    "id": "Q024",
+    "category": "YES_NO_VERIFICATION",
+    "question": "Is Java used in CampusConnect?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "No, CampusConnect is built with Python FastAPI and React.",
+    "expected_keywords": [
+      "Java"
+    ],
+    "expected_boolean": false,
+    "expected_mode": "YES_NO",
+    "is_golden": false
+  },
+  {
+    "id": "Q025",
+    "category": "EXPLANATION",
+    "question": "How does CampusConnect facilitate student collaboration?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "Through course-specific channels, real-time messaging, note sharing, and study group organization.",
+    "expected_keywords": [
+      "channels",
+      "messaging",
+      "collaboration"
+    ],
+    "expected_mode": "EXPLANATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q026",
+    "category": "EXPLANATION",
+    "question": "What is the purpose of the Daily Standup meeting?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "A 15-minute daily synchronization meeting for the development team.",
+    "expected_keywords": [
+      "15-minute",
+      "daily",
+      "synchronization"
+    ],
+    "expected_mode": "EXPLANATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q027",
+    "category": "EXPLANATION",
+    "question": "What is gradient descent in machine learning?",
+    "target_document": "Machine_Learning_Notes.txt",
+    "active_document": "Machine_Learning_Notes.txt",
+    "expected_answer": "An optimization algorithm that iteratively minimizes the loss function by updating weights in the direction of steepest decrease.",
+    "expected_keywords": [
+      "optimization",
+      "loss function",
+      "weight"
+    ],
+    "expected_mode": "EXPLANATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q028",
+    "category": "EXPLANATION",
+    "question": "What were the main achievements during the internship?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "Reduced document search latency by 40% and improved indexing throughput.",
+    "expected_keywords": [
+      "search latency",
+      "40%",
+      "indexing"
+    ],
+    "expected_mode": "EXPLANATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q029",
+    "category": "EXPLANATION",
+    "question": "How does linear regression model relationships between variables?",
+    "target_document": "Machine_Learning_Notes.txt",
+    "active_document": "Machine_Learning_Notes.txt",
+    "expected_answer": "Models linear relationship using y = wx + b.",
+    "expected_keywords": [
+      "linear",
+      "y = w * x + b"
+    ],
+    "expected_mode": "EXPLANATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q030",
+    "category": "EXPLANATION",
+    "question": "What is the role of the Product Owner in Scrum?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Defines product vision and prioritizes the product backlog.",
+    "expected_keywords": [
+      "vision",
+      "product backlog"
+    ],
+    "expected_mode": "EXPLANATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q031",
+    "category": "SUMMARY",
+    "question": "Summarize the entire resume",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "Vijay Kakumani is a Computer Science graduate and backend engineer with experience in Python, FastAPI, and React at TechCorp.",
+    "expected_keywords": [
+      "Vijay Kakumani",
+      "Computer Science",
+      "FastAPI",
+      "React"
+    ],
+    "expected_mode": "SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q032",
+    "category": "SUMMARY",
+    "question": "Provide a summary of the CampusConnect project report",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "CampusConnect is a university collaboration platform with React frontend, FastAPI backend, and PostgreSQL database.",
+    "expected_keywords": [
+      "CampusConnect",
+      "FastAPI",
+      "React",
+      "PostgreSQL"
+    ],
+    "expected_mode": "SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q033",
+    "category": "SUMMARY",
+    "question": "Summarize Agile methodologies",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "An overview of Scrum with 2-week sprints, core roles (Product Owner, Scrum Master, Dev Team), and ceremonies.",
+    "expected_keywords": [
+      "Scrum",
+      "sprints",
+      "Product Owner",
+      "Scrum Master"
+    ],
+    "expected_mode": "SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q034",
+    "category": "SUMMARY",
+    "question": "Summarize the machine learning notes",
+    "target_document": "Machine_Learning_Notes.txt",
+    "active_document": "Machine_Learning_Notes.txt",
+    "expected_answer": "Study notes covering supervised learning, linear regression, gradient descent, neural networks, and PyTorch.",
+    "expected_keywords": [
+      "supervised learning",
+      "gradient descent",
+      "neural networks"
+    ],
+    "expected_mode": "SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q035",
+    "category": "SUMMARY",
+    "question": "Summarize the internship report",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "Final report on Vijay's 8-week internship at TechCorp Solutions supervised by Dr. Aris Thorne, achieving a 40% latency reduction.",
+    "expected_keywords": [
+      "8 weeks",
+      "TechCorp",
+      "Aris Thorne",
+      "40%"
+    ],
+    "expected_mode": "SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q036",
+    "category": "SUMMARY",
+    "question": "Summarize the Q3 budget summary",
+    "target_document": "Q3_Budget_Summary.pdf",
+    "active_document": "Q3_Budget_Summary.pdf",
+    "expected_answer": "Departmental financial allocation of $45,000 across infrastructure, marketing, and software tools.",
+    "expected_keywords": [
+      "45,000",
+      "infrastructure",
+      "marketing"
+    ],
+    "expected_mode": "SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q037",
+    "category": "TARGETED_SUMMARY",
+    "question": "Summarize only the internship section",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "Software Engineering Intern at TechCorp Solutions (June-August 2025), developed REST APIs and optimized PostgreSQL queries.",
+    "expected_keywords": [
+      "TechCorp",
+      "Intern",
+      "FastAPI",
+      "PostgreSQL"
+    ],
+    "expected_mode": "TARGETED_SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q038",
+    "category": "TARGETED_SUMMARY",
+    "question": "Summarize only the tech stack of CampusConnect",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "React with TypeScript on the frontend, Python FastAPI on the backend, and PostgreSQL database.",
+    "expected_keywords": [
+      "React",
+      "FastAPI",
+      "PostgreSQL"
+    ],
+    "expected_mode": "TARGETED_SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q039",
+    "category": "TARGETED_SUMMARY",
+    "question": "Summarize only the Scrum events",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Sprint Planning, Daily Standup, Sprint Review, and Sprint Retrospective.",
+    "expected_keywords": [
+      "Sprint Planning",
+      "Daily Standup",
+      "Sprint Review",
+      "Sprint Retrospective"
+    ],
+    "expected_mode": "TARGETED_SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q040",
+    "category": "TARGETED_SUMMARY",
+    "question": "Summarize only supervised learning",
+    "target_document": "Machine_Learning_Notes.txt",
+    "active_document": "Machine_Learning_Notes.txt",
+    "expected_answer": "Algorithms trained on labeled input-output pairs like Linear Regression, Logistic Regression, Decision Trees, and Random Forests.",
+    "expected_keywords": [
+      "labeled",
+      "Linear Regression",
+      "Decision Trees"
+    ],
+    "expected_mode": "TARGETED_SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q041",
+    "category": "TARGETED_SUMMARY",
+    "question": "Summarize only the financial breakdown in Q3 budget",
+    "target_document": "Q3_Budget_Summary.pdf",
+    "active_document": "Q3_Budget_Summary.pdf",
+    "expected_answer": "$20,000 for infrastructure, $15,000 for marketing, and $10,000 for software licenses.",
+    "expected_keywords": [
+      "20,000",
+      "15,000",
+      "10,000"
+    ],
+    "expected_mode": "TARGETED_SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q042",
+    "category": "TARGETED_SUMMARY",
+    "question": "Summarize only the projects in the resume",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "CampusConnect collaboration platform and Local AI Document Agent desktop tool.",
+    "expected_keywords": [
+      "CampusConnect",
+      "Local AI Document Agent"
+    ],
+    "expected_mode": "TARGETED_SUMMARY",
+    "is_golden": false
+  },
+  {
+    "id": "Q043",
+    "category": "INFORMATION_LOCATION",
+    "question": "Where is Python mentioned in the document?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "In the Technical Skills and Projects sections.",
+    "expected_keywords": [
+      "Skills"
+    ],
+    "expected_mode": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q044",
+    "category": "INFORMATION_LOCATION",
+    "question": "In which section is the internship duration specified?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "In the Duration section of the report.",
+    "expected_keywords": [
+      "Duration"
+    ],
+    "expected_mode": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q045",
+    "category": "INFORMATION_LOCATION",
+    "question": "Where are sprint ceremonies discussed?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Under the Scrum Ceremonies section.",
+    "expected_keywords": [
+      "Ceremonies"
+    ],
+    "expected_mode": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q046",
+    "category": "INFORMATION_LOCATION",
+    "question": "Where is the database architecture explained?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "In the Database section of the report.",
+    "expected_keywords": [
+      "Database"
+    ],
+    "expected_mode": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q047",
+    "category": "INFORMATION_LOCATION",
+    "question": "Where is Dr. Aris Thorne mentioned?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "In the Supervisor section.",
+    "expected_keywords": [
+      "Supervisor"
+    ],
+    "expected_mode": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q048",
+    "category": "INFORMATION_LOCATION",
+    "question": "Where is the gradient descent formula written?",
+    "target_document": "Machine_Learning_Notes.txt",
+    "active_document": "Machine_Learning_Notes.txt",
+    "expected_answer": "In section 3 Gradient Descent.",
+    "expected_keywords": [
+      "Gradient Descent"
+    ],
+    "expected_mode": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "Q049",
+    "category": "COUNTING",
+    "question": "How many programming languages are mentioned in skills?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "3 programming languages (Python, JavaScript, SQL).",
+    "expected_keywords": [
+      "3",
+      "Python",
+      "JavaScript",
+      "SQL"
+    ],
+    "expected_mode": "COUNT",
+    "is_golden": false
+  },
+  {
+    "id": "Q050",
+    "category": "COUNTING",
+    "question": "How many core Scrum roles are defined?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "3 core roles (Product Owner, Scrum Master, Development Team).",
+    "expected_keywords": [
+      "3"
+    ],
+    "expected_mode": "COUNT",
+    "is_golden": false
+  },
+  {
+    "id": "Q051",
+    "category": "COUNTING",
+    "question": "How many main features does CampusConnect offer?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "5 key features.",
+    "expected_keywords": [
+      "5"
+    ],
+    "expected_mode": "COUNT",
+    "is_golden": false
+  },
+  {
+    "id": "Q052",
+    "category": "COUNTING",
+    "question": "How many weeks did the internship last?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "8 weeks.",
+    "expected_keywords": [
+      "8"
+    ],
+    "expected_mode": "COUNT",
+    "is_golden": false
+  },
+  {
+    "id": "Q053",
+    "category": "COUNTING",
+    "question": "How many Scrum ceremonies are listed?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "4 ceremonies (Planning, Daily Standup, Review, Retrospective).",
+    "expected_keywords": [
+      "4"
+    ],
+    "expected_mode": "COUNT",
+    "is_golden": false
+  },
+  {
+    "id": "Q054",
+    "category": "COUNTING",
+    "question": "How many projects are detailed on the resume?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "2 projects (CampusConnect and Local AI Document Agent).",
+    "expected_keywords": [
+      "2"
+    ],
+    "expected_mode": "COUNT",
+    "is_golden": false
+  },
+  {
+    "id": "QA-GOLD-03",
+    "category": "FILTERING",
+    "question": "Which ones are frontend?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "JavaScript, React",
+    "expected_keywords": [
+      "JavaScript",
+      "React"
+    ],
+    "expected_mode": "FILTER",
+    "is_golden": true
+  },
+  {
+    "id": "Q056",
+    "category": "FILTERING",
+    "question": "Which database technologies are mentioned in the resume?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "PostgreSQL, SQLite",
+    "expected_keywords": [
+      "PostgreSQL",
+      "SQLite"
+    ],
+    "expected_mode": "FILTER",
+    "is_golden": false
+  },
+  {
+    "id": "Q057",
+    "category": "FILTERING",
+    "question": "Which Agile ceremonies occur daily?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Daily Standup",
+    "expected_keywords": [
+      "Daily Standup"
+    ],
+    "expected_mode": "FILTER",
+    "is_golden": false
+  },
+  {
+    "id": "Q058",
+    "category": "FILTERING",
+    "question": "Which machine learning algorithms are mentioned for supervised learning?",
+    "target_document": "Machine_Learning_Notes.txt",
+    "active_document": "Machine_Learning_Notes.txt",
+    "expected_answer": "Linear Regression, Logistic Regression, Decision Trees, Random Forests",
+    "expected_keywords": [
+      "Linear Regression",
+      "Logistic Regression"
+    ],
+    "expected_mode": "FILTER",
+    "is_golden": false
+  },
+  {
+    "id": "Q059",
+    "category": "FILTERING",
+    "question": "Which projects use FastAPI?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "CampusConnect and the TechCorp Solutions internship.",
+    "expected_keywords": [
+      "CampusConnect"
+    ],
+    "expected_mode": "FILTER",
+    "is_golden": false
+  },
+  {
+    "id": "Q060",
+    "category": "FILTERING",
+    "question": "Which budget category received the highest funding?",
+    "target_document": "Q3_Budget_Summary.pdf",
+    "active_document": "Q3_Budget_Summary.pdf",
+    "expected_answer": "Infrastructure & Cloud Hosting ($20,000).",
+    "expected_keywords": [
+      "Infrastructure",
+      "20,000"
+    ],
+    "expected_mode": "FILTER",
+    "is_golden": false
+  },
+  {
+    "id": "QA-GOLD-06",
+    "category": "TOPIC_SYNTHESIS",
+    "question": "Tell me everything about CampusConnect.",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "CampusConnect is a university student collaboration platform built with React, FastAPI, and PostgreSQL featuring real-time messaging, file sharing, and study groups.",
+    "expected_keywords": [
+      "CampusConnect",
+      "FastAPI",
+      "React",
+      "PostgreSQL",
+      "messaging"
+    ],
+    "expected_mode": "SYNTHESIS",
+    "is_golden": true
+  },
+  {
+    "id": "Q062",
+    "category": "TOPIC_SYNTHESIS",
+    "question": "Explain everything related to database design across the project",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "Uses PostgreSQL as the relational database storing profiles, channels, and message threads.",
+    "expected_keywords": [
+      "PostgreSQL",
+      "profiles",
+      "threads"
+    ],
+    "expected_mode": "SYNTHESIS",
+    "is_golden": false
+  },
+  {
+    "id": "Q063",
+    "category": "TOPIC_SYNTHESIS",
+    "question": "Describe the role of the Product Owner in Agile",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Defines the product vision and prioritizes the backlog items.",
+    "expected_keywords": [
+      "product vision",
+      "backlog"
+    ],
+    "expected_mode": "SYNTHESIS",
+    "is_golden": false
+  },
+  {
+    "id": "Q064",
+    "category": "TOPIC_SYNTHESIS",
+    "question": "Detail the intern's contribution to latency reduction",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "Reduced document search latency by 40% and improved indexing throughput.",
+    "expected_keywords": [
+      "40%",
+      "search latency",
+      "indexing"
+    ],
+    "expected_mode": "SYNTHESIS",
+    "is_golden": false
+  },
+  {
+    "id": "Q065",
+    "category": "TOPIC_SYNTHESIS",
+    "question": "Explain the full lifecycle of a Scrum sprint",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Starts with Sprint Planning, daily standups during execution, followed by Sprint Review and Sprint Retrospective.",
+    "expected_keywords": [
+      "Sprint Planning",
+      "Daily Standup",
+      "Sprint Review",
+      "Sprint Retrospective"
+    ],
+    "expected_mode": "SYNTHESIS",
+    "is_golden": false
+  },
+  {
+    "id": "Q066",
+    "category": "TOPIC_SYNTHESIS",
+    "question": "Detail the mathematical foundation of gradient descent",
+    "target_document": "Machine_Learning_Notes.txt",
+    "active_document": "Machine_Learning_Notes.txt",
+    "expected_answer": "Iterative weight update rule: w = w - alpha * grad, minimizing the objective loss function.",
+    "expected_keywords": [
+      "w = w - alpha * grad",
+      "loss function"
+    ],
+    "expected_mode": "SYNTHESIS",
+    "is_golden": false
+  },
+  {
+    "id": "Q067",
+    "category": "PROCEDURAL_QUESTION",
+    "question": "How is a sprint planned in Scrum?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Through the Sprint Planning ceremony at the start of each sprint.",
+    "expected_keywords": [
+      "Sprint Planning"
+    ],
+    "expected_mode": "PROCEDURAL",
+    "is_golden": false
+  },
+  {
+    "id": "Q068",
+    "category": "PROCEDURAL_QUESTION",
+    "question": "How are user sessions secured in CampusConnect?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "End-to-end token validation using JWT with hashed passwords.",
+    "expected_keywords": [
+      "JWT",
+      "token"
+    ],
+    "expected_mode": "PROCEDURAL",
+    "is_golden": false
+  },
+  {
+    "id": "Q069",
+    "category": "PROCEDURAL_QUESTION",
+    "question": "How does gradient descent update model weights?",
+    "target_document": "Machine_Learning_Notes.txt",
+    "active_document": "Machine_Learning_Notes.txt",
+    "expected_answer": "By subtracting the learning rate multiplied by the gradient: w = w - alpha * grad.",
+    "expected_keywords": [
+      "w = w - alpha * grad"
+    ],
+    "expected_mode": "PROCEDURAL",
+    "is_golden": false
+  },
+  {
+    "id": "Q070",
+    "category": "PROCEDURAL_QUESTION",
+    "question": "What is the procedure during a sprint retrospective?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "Team reflection on process improvements.",
+    "expected_keywords": [
+      "reflection",
+      "process improvement"
+    ],
+    "expected_mode": "PROCEDURAL",
+    "is_golden": false
+  },
+  {
+    "id": "Q071",
+    "category": "PROCEDURAL_QUESTION",
+    "question": "How do students authenticate in CampusConnect?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "Via JWT token authentication with role-based access control.",
+    "expected_keywords": [
+      "JWT",
+      "token"
+    ],
+    "expected_mode": "PROCEDURAL",
+    "is_golden": false
+  },
+  {
+    "id": "Q072",
+    "category": "PROCEDURAL_QUESTION",
+    "question": "What steps were taken to optimize PostgreSQL queries in the internship?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "Optimized PostgreSQL queries and implemented caching.",
+    "expected_keywords": [
+      "caching",
+      "PostgreSQL"
+    ],
+    "expected_mode": "PROCEDURAL",
+    "is_golden": false
+  },
+  {
+    "id": "Q073",
+    "category": "FOLLOW_UP_QUESTION",
+    "question": "What was the date of completion?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "July 25, 2025.",
+    "expected_keywords": [
+      "July 25, 2025"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q074",
+    "category": "FOLLOW_UP_QUESTION",
+    "question": "Who was his supervisor again?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "Dr. Aris Thorne",
+    "expected_keywords": [
+      "Aris Thorne"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q075",
+    "category": "FOLLOW_UP_QUESTION",
+    "question": "And what was his GPA?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "3.8/4.0",
+    "expected_keywords": [
+      "3.8"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q076",
+    "category": "FOLLOW_UP_QUESTION",
+    "question": "What frameworks were used for that?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "React, FastAPI, Node.js",
+    "expected_keywords": [
+      "FastAPI",
+      "React"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q077",
+    "category": "FOLLOW_UP_QUESTION",
+    "question": "How much was spent on cloud hosting?",
+    "target_document": "Q3_Budget_Summary.pdf",
+    "active_document": "Q3_Budget_Summary.pdf",
+    "expected_answer": "$20,000",
+    "expected_keywords": [
+      "20,000"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q078",
+    "category": "FOLLOW_UP_QUESTION",
+    "question": "When does the next sprint review happen?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": "Agile_Methodologies.docx",
+    "expected_answer": "At the conclusion of the 2-week sprint.",
+    "expected_keywords": [
+      "sprint"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q079",
+    "category": "PRONOUN_CONTEXT_QUESTION",
+    "question": "How long was it?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "8 weeks",
+    "expected_keywords": [
+      "8 weeks"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q080",
+    "category": "PRONOUN_CONTEXT_QUESTION",
+    "question": "What technologies did it use?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "React, FastAPI, PostgreSQL",
+    "expected_keywords": [
+      "React",
+      "FastAPI",
+      "PostgreSQL"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q081",
+    "category": "PRONOUN_CONTEXT_QUESTION",
+    "question": "Who was his supervisor?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "Dr. Aris Thorne",
+    "expected_keywords": [
+      "Aris Thorne"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q082",
+    "category": "PRONOUN_CONTEXT_QUESTION",
+    "question": "What is its primary goal?",
+    "target_document": "CampusConnect_Report.pdf",
+    "active_document": "CampusConnect_Report.pdf",
+    "expected_answer": "To allow university students to share course notes and collaborate on assignments.",
+    "expected_keywords": [
+      "collaboration",
+      "students"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q083",
+    "category": "PRONOUN_CONTEXT_QUESTION",
+    "question": "When was it issued?",
+    "target_document": "AWS_Cloud_Practitioner_Certificate.pdf",
+    "active_document": "AWS_Cloud_Practitioner_Certificate.pdf",
+    "expected_answer": "January 15, 2025",
+    "expected_keywords": [
+      "January 15, 2025"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q084",
+    "category": "PRONOUN_CONTEXT_QUESTION",
+    "question": "How much was allocated to it?",
+    "target_document": "Q3_Budget_Summary.pdf",
+    "active_document": "Q3_Budget_Summary.pdf",
+    "expected_answer": "$45,000",
+    "expected_keywords": [
+      "45,000"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "QA-GOLD-07",
+    "category": "NOT_FOUND_QUESTION",
+    "question": "What was the company revenue?",
+    "target_document": "Q3_Budget_Summary.pdf",
+    "active_document": "Q3_Budget_Summary.pdf",
+    "expected_answer": "Not found in the document.",
+    "expected_keywords": [
+      "not found",
+      "does not mention"
+    ],
+    "expected_mode": "NOT_FOUND",
+    "is_golden": true
+  },
+  {
+    "id": "Q086",
+    "category": "NOT_FOUND_QUESTION",
+    "question": "What is the CEO's name?",
+    "target_document": "Q3_Budget_Summary.pdf",
+    "active_document": "Q3_Budget_Summary.pdf",
+    "expected_answer": "Not found in the document.",
+    "expected_keywords": [
+      "not found",
+      "does not mention"
+    ],
+    "expected_mode": "NOT_FOUND",
+    "is_golden": false
+  },
+  {
+    "id": "Q087",
+    "category": "NOT_FOUND_QUESTION",
+    "question": "What is the candidate's salary?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "Not found in the document.",
+    "expected_keywords": [
+      "not found",
+      "does not mention"
+    ],
+    "expected_mode": "NOT_FOUND",
+    "is_golden": false
+  },
+  {
+    "id": "Q088",
+    "category": "NOT_FOUND_QUESTION",
+    "question": "What is the intern's blood group?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "expected_answer": "Not found in the document.",
+    "expected_keywords": [
+      "not found",
+      "does not mention"
+    ],
+    "expected_mode": "NOT_FOUND",
+    "is_golden": false
+  },
+  {
+    "id": "Q089",
+    "category": "NOT_FOUND_QUESTION",
+    "question": "What is the projected budget for 2030?",
+    "target_document": "Q3_Budget_Summary.pdf",
+    "active_document": "Q3_Budget_Summary.pdf",
+    "expected_answer": "Not found in the document.",
+    "expected_keywords": [
+      "not found",
+      "does not mention"
+    ],
+    "expected_mode": "NOT_FOUND",
+    "is_golden": false
+  },
+  {
+    "id": "Q090",
+    "category": "NOT_FOUND_QUESTION",
+    "question": "Does Vijay know Rust programming?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "Not found in the document.",
+    "expected_keywords": [
+      "not found",
+      "does not mention"
+    ],
+    "expected_mode": "NOT_FOUND",
+    "is_golden": false
+  },
+  {
+    "id": "Q091",
+    "category": "MULTI_STEP_CONVERSATION",
+    "step_index": 1,
+    "question": "Find my resume",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": null,
+    "expected_answer": "Found: Vijay_Resume.pdf",
+    "expected_keywords": [
+      "Vijay_Resume.pdf"
+    ],
+    "expected_mode": "FIND",
+    "is_golden": false
+  },
+  {
+    "id": "Q092",
+    "category": "MULTI_STEP_CONVERSATION",
+    "step_index": 2,
+    "question": "What technologies do I know?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "Python, JavaScript, SQL, React, FastAPI, Node.js, PostgreSQL, SQLite",
+    "expected_keywords": [
+      "Python",
+      "JavaScript",
+      "React"
+    ],
+    "expected_mode": "LIST",
+    "is_golden": false
+  },
+  {
+    "id": "Q093",
+    "category": "MULTI_STEP_CONVERSATION",
+    "step_index": 3,
+    "question": "Which ones are frontend?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "JavaScript, React",
+    "expected_keywords": [
+      "JavaScript",
+      "React"
+    ],
+    "expected_mode": "FILTER",
+    "is_golden": false
+  },
+  {
+    "id": "Q094",
+    "category": "MULTI_STEP_CONVERSATION",
+    "step_index": 4,
+    "question": "What projects use them?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": "Vijay_Resume.pdf",
+    "expected_answer": "CampusConnect and Local AI Document Agent",
+    "expected_keywords": [
+      "CampusConnect"
+    ],
+    "expected_mode": "LIST",
+    "is_golden": false
+  },
+  {
+    "id": "QA-GOLD-08",
+    "category": "CROSS_DOCUMENT_ISOLATION",
+    "question": "What was the internship duration?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "conflicting_document": "Internship_Report_External.pdf",
+    "expected_answer": "8 weeks",
+    "expected_keywords": [
+      "8 weeks"
+    ],
+    "forbidden_keywords": [
+      "12 weeks",
+      "Alex Mercer",
+      "Global Systems"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": true
+  },
+  {
+    "id": "Q096",
+    "category": "CROSS_DOCUMENT_ISOLATION",
+    "question": "What was the internship duration?",
+    "target_document": "Internship_Report_External.pdf",
+    "active_document": "Internship_Report_External.pdf",
+    "conflicting_document": "Internship_Report.pdf",
+    "expected_answer": "12 weeks",
+    "expected_keywords": [
+      "12 weeks"
+    ],
+    "forbidden_keywords": [
+      "8 weeks",
+      "Vijay Kakumani",
+      "TechCorp"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q097",
+    "category": "CROSS_DOCUMENT_ISOLATION",
+    "question": "Which company was the internship at?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": "Internship_Report.pdf",
+    "conflicting_document": "Internship_Report_External.pdf",
+    "expected_answer": "TechCorp Solutions",
+    "expected_keywords": [
+      "TechCorp Solutions"
+    ],
+    "forbidden_keywords": [
+      "Global Systems Inc"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "QA-GOLD-01",
+    "category": "DOCUMENT_TARGET_REFERENCES",
+    "question": "What tech I used in resume?",
+    "target_document": "Vijay_Resume.pdf",
+    "active_document": null,
+    "expected_answer": "Python, JavaScript, SQL, React, FastAPI, Node.js, PostgreSQL, SQLite",
+    "expected_keywords": [
+      "Python",
+      "JavaScript",
+      "React"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": true
+  },
+  {
+    "id": "Q099",
+    "category": "DOCUMENT_TARGET_REFERENCES",
+    "question": "What was the duration in the internship report?",
+    "target_document": "Internship_Report.pdf",
+    "active_document": null,
+    "expected_answer": "8 weeks",
+    "expected_keywords": [
+      "8 weeks"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  },
+  {
+    "id": "Q100",
+    "category": "DOCUMENT_TARGET_REFERENCES",
+    "question": "In Agile methodologies, what is Scrum?",
+    "target_document": "Agile_Methodologies.docx",
+    "active_document": null,
+    "expected_answer": "An iterative framework structured around fixed-length 2-week sprints.",
+    "expected_keywords": [
+      "iterative",
+      "sprints"
+    ],
+    "expected_mode": "FACT",
+    "is_golden": false
+  }
+]

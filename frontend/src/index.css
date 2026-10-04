@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #111111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Light Neumorphism */
+.neu-flat {
+  background: #f5f5f5;
+  box-shadow: 6px 6px 14px #e3e3e3, -6px -6px 14px #ffffff;
+}
+
+.neu-raised {
+  background: #f8f8f8;
+  box-shadow: 8px 8px 18px #e1e1e1, -8px -8px 18px #ffffff;
+}
+
+.neu-raised-sm {
+  background: #f8f8f8;
+  box-shadow: 4px 4px 10px #e4e4e4, -4px -4px 10px #ffffff;
+}
+
+.neu-inset {
+  background: #efefef;
+  box-shadow: inset 4px 4px 8px #d8d8d8, inset -4px -4px 8px #ffffff;
+}
+
+.neu-inset-deep {
+  background: #eaeaea;
+  box-shadow: inset 5px 5px 10px #d4d4d4, inset -5px -5px 10px #ffffff;
+}
+
+.neu-button {
+  background: #f5f5f5;
+  box-shadow: 4px 4px 10px #e2e2e2, -4px -4px 10px #ffffff;
+  transition: all 0.15s ease-in-out;
+}
+
+.neu-button:hover {
+  box-shadow: 6px 6px 14px #dedede, -6px -6px 14px #ffffff;
+}
+
+.neu-button:active {
+  box-shadow: inset 3px 3px 6px #d8d8d8, inset -3px -3px 6px #ffffff;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}

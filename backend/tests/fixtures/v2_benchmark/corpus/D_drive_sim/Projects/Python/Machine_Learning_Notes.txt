@@ -1,0 +1,19 @@
+Machine Learning Fundamentals and Study Notes
+
+1. Supervised Learning:
+Algorithms trained on labeled input-output pairs. Common examples include Linear Regression, Logistic Regression, Decision Trees, and Random Forests.
+
+2. Linear Regression:
+Models the linear relationship between independent input variable X and dependent output variable Y.
+Mathematical formulation: y = w * x + b, where w represents the weight and b represents the bias.
+
+3. Gradient Descent:
+An iterative optimization algorithm used to minimize the objective loss function.
+Weight update rule: w = w - alpha * grad, where alpha is the learning rate and grad is the gradient of the loss function with respect to weight w.
+
+4. Neural Networks:
+Layers of interconnected artificial neurons computing non-linear transformations using activation functions such as ReLU, Sigmoid, and Tanh.
+Trained using backpropagation and stochastic gradient descent.
+
+5. Machine Learning Frameworks:
+Primary libraries: PyTorch, Scikit-Learn, NumPy, and Pandas.

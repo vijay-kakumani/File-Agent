@@ -1,0 +1,804 @@
+﻿============================================================
+TOTAL FAILED SEARCH CASES: 24
+============================================================
+
+============================================================
+CASE 1/24: [S011] - Category: FILENAME_TYPO
+============================================================
+Query:              'Vjay_Resume.pdf'
+Expected Document:  Vijay_Resume.pdf
+Actual Document:    Resume.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'Vjay_Resume'
+Folder Constraint:  None
+Extension Filter:   .pdf
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Resume.pdf (Score: 50.5) [Folder: College]
+      Signals: FTS=0.0, Name=75.0, Stem=90.0, Folder=33.33, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Vijay_Resume.pdf (Score: 48.04) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=0.0, Name=81.48, Stem=95.65, Folder=0.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Resume.pdf (Score: 45.5) [Folder: Downloads]
+      Signals: FTS=0.0, Name=75.0, Stem=90.0, Folder=0.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Nikhil_CS_Resume.pdf (Score: 43.48) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=70.59, Folder=0.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Q3_Budget_Summary.pdf (Score: 26.38) [Folder: Downloads]
+      Signals: FTS=0.0, Name=47.5, Stem=47.5, Folder=0.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Vijay_Resume.pdf' ranked below top because Score 48.04 < 50.5
+
+============================================================
+CASE 2/24: [S014] - Category: MISSING_CHARACTER
+============================================================
+Query:              'CampuConnect_Report.pdf'
+Expected Document:  CampusConnect_Report.pdf
+Actual Document:    Internship_Report_External.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'CampuConnect_Report'
+Folder Constraint:  None
+Extension Filter:   .pdf
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Internship_Report_External.pdf (Score: 49.48) [Folder: Internship]
+      Signals: FTS=0.0, Name=85.5, Stem=48.0, Folder=40.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: CampusConnect_Report.pdf (Score: 48.85) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=0.0, Name=88.37, Stem=97.44, Folder=0.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Internship_Report.pdf (Score: 34.48) [Folder: Internship]
+      Signals: FTS=0.0, Name=48.0, Stem=52.17, Folder=40.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: AWS_Cloud_Practitioner_Certificate.pdf (Score: 29.64) [Folder: Certifications]
+      Signals: FTS=0.0, Name=42.63, Stem=42.63, Folder=36.36, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Resume.pdf (Score: 26.39) [Folder: College]
+      Signals: FTS=0.0, Name=33.75, Stem=30.0, Folder=42.86, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'CampusConnect_Report.pdf' ranked below top because Score 48.85 < 49.48
+
+============================================================
+CASE 3/24: [S021] - Category: TRANSPOSED_CHARACTERS
+============================================================
+Query:              'Viayj_Resume.pdf'
+Expected Document:  Vijay_Resume.pdf
+Actual Document:    Resume.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'Viayj_Resume'
+Folder Constraint:  None
+Extension Filter:   .pdf
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Resume.pdf (Score: 50.5) [Folder: College]
+      Signals: FTS=0.0, Name=75.0, Stem=90.0, Folder=33.33, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Vijay_Resume.pdf (Score: 46.25) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=0.0, Name=78.57, Stem=91.67, Folder=0.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Resume.pdf (Score: 45.5) [Folder: Downloads]
+      Signals: FTS=0.0, Name=75.0, Stem=90.0, Folder=0.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Nikhil_CS_Resume.pdf (Score: 43.48) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=66.67, Folder=0.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Internship_Report_External.pdf (Score: 26.61) [Folder: Internship]
+      Signals: FTS=0.0, Name=37.5, Stem=37.5, Folder=31.58, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Vijay_Resume.pdf' ranked below top because Score 46.25 < 50.5
+
+============================================================
+CASE 4/24: [S022] - Category: TRANSPOSED_CHARACTERS
+============================================================
+Query:              'CampuScnnect_Report.pdf'
+Expected Document:  CampusConnect_Report.pdf
+Actual Document:    Internship_Report_External.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'CampuScnnect_Report'
+Folder Constraint:  None
+Extension Filter:   .pdf
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Internship_Report_External.pdf (Score: 49.48) [Folder: Internship]
+      Signals: FTS=0.0, Name=85.5, Stem=48.0, Folder=40.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: CampusConnect_Report.pdf (Score: 48.85) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=0.0, Name=88.37, Stem=97.44, Folder=0.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Internship_Report.pdf (Score: 34.48) [Folder: Internship]
+      Signals: FTS=0.0, Name=48.0, Stem=52.17, Folder=40.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: AWS_Cloud_Practitioner_Certificate.pdf (Score: 27.66) [Folder: Certifications]
+      Signals: FTS=0.0, Name=38.0, Stem=38.0, Folder=37.04, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'CampusConnect_Report.pdf' ranked below top because Score 48.85 < 49.48
+
+============================================================
+CASE 5/24: [S025] - Category: BAD_GRAMMAR
+============================================================
+Query:              'find resume for vijay please give'
+Expected Document:  Vijay_Resume.pdf
+Actual Document:    Resume.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'resume for vijay please give'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Resume.pdf (Score: 47.42) [Folder: College]
+      Signals: FTS=0.0, Name=85.5, Stem=90.0, Folder=46.15, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Resume.pdf (Score: 45.5) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=90.0, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Vijay_Resume.pdf (Score: 43.47) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Nikhil_CS_Resume.pdf (Score: 43.47) [Folder: Downloads]
+      Signals: FTS=0.0, Name=43.85, Stem=85.5, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Agile_Methodologies.docx (Score: 25.04) [Folder: Agile]
+      Signals: FTS=0.0, Name=30.77, Stem=34.04, Folder=66.67, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Vijay_Resume.pdf' ranked below top because Score 43.47 < 47.42
+
+============================================================
+CASE 6/24: [S026] - Category: BAD_GRAMMAR
+============================================================
+Query:              'where report internship is'
+Expected Document:  Internship_Report.pdf
+Actual Document:    Internship_Report_External.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  LOCATION | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'where report internship is'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Internship_Report_External.pdf (Score: 90.0) [Folder: Internship]
+      Signals: FTS=100.0, Name=100.0, Stem=100.0, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Internship_Report.pdf (Score: 87.6) [Folder: Internship] *** EXPECTED ***
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Project_Report.docx (Score: 43.09) [Folder: CampusConnect]
+      Signals: FTS=0.0, Name=63.16, Stem=85.5, Folder=30.77, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Vijay_Resume.pdf (Score: 40.72) [Folder: Downloads]
+      Signals: FTS=84.0, Name=34.48, Stem=32.0, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: CampusConnect_Report.pdf (Score: 38.48) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Internship_Report.pdf' ranked below top because Score 87.6 < 90.0
+
+============================================================
+CASE 7/24: [S028] - Category: BAD_GRAMMAR
+============================================================
+Query:              'me want machine learn notes'
+Expected Document:  Machine_Learning_Notes.txt
+Actual Document:    Meeting_Notes.txt
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'want machine learn notes'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Meeting_Notes.txt (Score: 45.14) [Folder: Desktop]
+      Signals: FTS=0.0, Name=50.98, Stem=85.5, Folder=44.44, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Machine_Learning_Notes.txt (Score: 42.8) [Folder: Python] *** EXPECTED ***
+      Signals: FTS=0.0, Name=84.0, Stem=82.61, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Internship_Report_External.pdf (Score: 26.81) [Folder: Internship]
+      Signals: FTS=0.0, Name=40.74, Stem=41.8, Folder=53.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Resume.pdf (Score: 26.68) [Folder: Downloads]
+      Signals: FTS=0.0, Name=30.0, Stem=45.0, Folder=42.86, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Resume.pdf (Score: 25.7) [Folder: College]
+      Signals: FTS=0.0, Name=30.0, Stem=45.0, Folder=36.36, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Machine_Learning_Notes.txt' ranked below top because Score 42.8 < 45.14
+
+============================================================
+CASE 8/24: [S030] - Category: SHORTHAND
+============================================================
+Query:              'cc report'
+Expected Document:  CampusConnect_Report.pdf
+Actual Document:    Project_Report.docx
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'cc report'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Project_Report.docx (Score: 74.1) [Folder: CampusConnect]
+      Signals: FTS=100.0, Name=85.5, Stem=85.5, Folder=37.5, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: CampusConnect_Report.pdf (Score: 72.6) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Internship_Report.pdf (Score: 63.67) [Folder: Internship]
+      Signals: FTS=84.0, Name=85.5, Stem=85.5, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Vijay_Resume.pdf (Score: 40.8) [Folder: Downloads]
+      Signals: FTS=76.0, Name=40.0, Stem=0.0, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Internship_Report_External.pdf (Score: 38.48) [Folder: Internship]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'CampusConnect_Report.pdf' ranked below top because Score 72.6 < 74.1
+
+============================================================
+CASE 9/24: [S031] - Category: SHORTHAND
+============================================================
+Query:              'intern rept'
+Expected Document:  Internship_Report.pdf
+Actual Document:    Internship_Report_External.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'intern rept'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Internship_Report_External.pdf (Score: 86.25) [Folder: Internship]
+      Signals: FTS=100.0, Name=100.0, Stem=100.0, Folder=75.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Internship_Report.pdf (Score: 83.85) [Folder: Internship] *** EXPECTED ***
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=75.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Vijay_Resume.pdf (Score: 41.87) [Folder: Downloads]
+      Signals: FTS=84.0, Name=37.04, Stem=34.78, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: CampusConnect_Report.pdf (Score: 38.48) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Project_Report.docx (Score: 35.92) [Folder: CampusConnect]
+      Signals: FTS=0.0, Name=63.16, Stem=63.16, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Internship_Report.pdf' ranked below top because Score 83.85 < 86.25
+
+============================================================
+CASE 10/24: [S034] - Category: CONVERSATIONAL_LANGUAGE
+============================================================
+Query:              'Could you please locate the file named Vijay_Resume?'
+Expected Document:  Vijay_Resume.pdf
+Actual Document:    Resume.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'named Vijay_Resume'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Resume.pdf (Score: 46.93) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=90.0, Folder=42.86, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Vijay_Resume.pdf (Score: 46.93) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=0.0, Name=85.71, Stem=90.0, Folder=42.86, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Resume.pdf (Score: 45.5) [Folder: College]
+      Signals: FTS=0.0, Name=85.5, Stem=90.0, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Nikhil_CS_Resume.pdf (Score: 30.98) [Folder: Downloads]
+      Signals: FTS=0.0, Name=50.0, Stem=54.55, Folder=42.86, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Vijay_Resume.pdf' ranked below top because Score 46.93 < 46.93
+
+============================================================
+CASE 11/24: [S038] - Category: FILLER_HEAVY_LANGUAGE
+============================================================
+Query:              'So like I was wondering if you could find CampusConnect_Report'
+Expected Document:  CampusConnect_Report.pdf
+Actual Document:    Project_Report.docx
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'So like I was wondering if you could find CampusConnect_Report'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Project_Report.docx (Score: 83.47) [Folder: CampusConnect]
+      Signals: FTS=100.0, Name=85.5, Stem=85.5, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: CampusConnect_Report.pdf (Score: 77.6) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Internship_Report.pdf (Score: 71.17) [Folder: Internship]
+      Signals: FTS=84.0, Name=85.5, Stem=85.5, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Internship_Report_External.pdf (Score: 45.98) [Folder: Internship]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Tax_Receipt_2025.txt (Score: 27.75) [Folder: Personal]
+      Signals: FTS=0.0, Name=38.57, Stem=45.0, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'CampusConnect_Report.pdf' ranked below top because Score 77.6 < 83.47
+
+============================================================
+CASE 12/24: [S041] - Category: VAGUE_MEMORY
+============================================================
+Query:              'That PDF I downloaded with my name on it'
+Expected Document:  Vijay_Resume.pdf
+Actual Document:    CampusConnect_Report.pdf
+Status:             WRONG_NO_MATCH
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'That I downloaded with name on it'
+Folder Constraint:  None
+Extension Filter:   .pdf
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  LOW
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: CampusConnect_Report.pdf (Score: 35.09) [Folder: Downloads]
+      Signals: FTS=0.0, Name=31.58, Stem=37.24, Folder=88.89, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Nikhil_CS_Resume.pdf (Score: 31.64) [Folder: Downloads]
+      Signals: FTS=0.0, Name=31.76, Stem=32.06, Folder=88.89, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Resume.pdf (Score: 29.93) [Folder: Downloads]
+      Signals: FTS=0.0, Name=30.0, Stem=30.0, Folder=88.89, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Vijay_Resume.pdf (Score: 29.93) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=0.0, Name=30.0, Stem=30.0, Folder=88.89, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: AWS_Cloud_Practitioner_Certificate.pdf (Score: 29.66) [Folder: Certifications]
+      Signals: FTS=0.0, Name=36.62, Stem=38.81, Folder=48.0, Ext=100.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Vijay_Resume.pdf' ranked below top because Score 29.93 < 35.09
+
+============================================================
+CASE 13/24: [S044] - Category: VAGUE_MEMORY
+============================================================
+Query:              'That report on Scrum and sprint planning'
+Expected Document:  Agile_Methodologies.docx
+Actual Document:    Internship_Report.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'That report on Scrum and sprint planning'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Internship_Report.pdf (Score: 45.98) [Folder: Internship]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Internship_Report_External.pdf (Score: 45.98) [Folder: Internship]
+      Signals: FTS=0.0, Name=40.71, Stem=85.5, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Project_Report.docx (Score: 43.47) [Folder: CampusConnect]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: CampusConnect_Report.pdf (Score: 43.47) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Tax_Receipt_2025.txt (Score: 30.64) [Folder: Personal]
+      Signals: FTS=0.0, Name=46.29, Stem=51.43, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc was NOT in returned candidates at all!
+
+============================================================
+CASE 14/24: [S046] - Category: CONTENT_DESCRIPTION
+============================================================
+Query:              'document mentioning PostgreSQL and React projects'
+Expected Document:  ['CampusConnect_Report.pdf', 'Vijay_Resume.pdf']
+Actual Document:    Project_Report.docx
+Status:             WRONG_NO_MATCH
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'document mentioning PostgreSQL and React projects'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  LOW
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Project_Report.docx (Score: 37.73) [Folder: CampusConnect]
+      Signals: FTS=0.0, Name=60.35, Stem=67.18, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Meeting_Notes.txt (Score: 31.59) [Folder: Desktop]
+      Signals: FTS=0.0, Name=52.94, Stem=55.38, Folder=44.44, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Machine_Learning_Notes.txt (Score: 29.59) [Folder: Python]
+      Signals: FTS=0.0, Name=45.0, Stem=49.09, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: System_Architecture_Spec.md (Score: 27.75) [Folder: Python]
+      Signals: FTS=0.0, Name=43.33, Stem=45.0, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Python_Backend_Guide.md (Score: 27.18) [Folder: Python]
+      Signals: FTS=0.0, Name=43.74, Stem=42.75, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'CampusConnect_Report.pdf' ranked below top because Score 27.03 < 37.73
+
+============================================================
+CASE 15/24: [S048] - Category: CONTENT_DESCRIPTION
+============================================================
+Query:              'file detailing the 8-week internship at TechCorp'
+Expected Document:  Internship_Report.pdf
+Actual Document:    Internship_Report_External.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'detailing 8-week internship at TechCorp'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Internship_Report_External.pdf (Score: 90.0) [Folder: Internship]
+      Signals: FTS=100.0, Name=100.0, Stem=100.0, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Internship_Report.pdf (Score: 87.6) [Folder: Internship] *** EXPECTED ***
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Vijay_Resume.pdf (Score: 45.33) [Folder: Downloads]
+      Signals: FTS=84.0, Name=34.48, Stem=32.0, Folder=30.77, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: CampusConnect_Report.pdf (Score: 43.09) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=30.77, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Meeting_Notes.txt (Score: 35.64) [Folder: Desktop]
+      Signals: FTS=0.0, Name=50.29, Stem=59.19, Folder=60.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Internship_Report.pdf' ranked below top because Score 87.6 < 90.0
+
+============================================================
+CASE 16/24: [S-GOLD-04] - Category: DEEP_NESTED_FOLDER
+============================================================
+Query:              'Find my internship report in D:\College\4th Year\Internship'
+Expected Document:  Internship_Report_External.pdf
+Actual Document:    Internship_Report.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'internship report in Year\Internship'
+Folder Constraint:  D:\College\4th
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Internship_Report.pdf (Score: 100.0) [Folder: Internship]
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=True
+  #2: Internship_Report_External.pdf (Score: 100.0) [Folder: Internship] *** EXPECTED ***
+      Signals: FTS=100.0, Name=100.0, Stem=100.0, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=True
+  >>> Expected doc 'Internship_Report_External.pdf' ranked below top because Score 100.0 < 100.0
+
+============================================================
+CASE 17/24: [S074] - Category: SEMANTIC_WORDING_VARIATION
+============================================================
+Query:              'Find my curriculum vitae'
+Expected Document:  ['Vijay_Resume.pdf', 'Resume.pdf']
+Actual Document:    Nikhil_CS_Resume.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'curriculum vitae'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Nikhil_CS_Resume.pdf (Score: 75.0) [Folder: Downloads]
+      Signals: FTS=100.0, Name=100.0, Stem=100.0, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Resume.pdf (Score: 72.6) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Resume.pdf (Score: 70.2) [Folder: College] *** EXPECTED ***
+      Signals: FTS=84.0, Name=100.0, Stem=100.0, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Vijay_Resume.pdf (Score: 67.8) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=76.0, Name=100.0, Stem=100.0, Folder=0.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Agile_Methodologies.docx (Score: 28.82) [Folder: Agile]
+      Signals: FTS=0.0, Name=45.0, Stem=45.0, Folder=57.14, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Resume.pdf' ranked below top because Score 72.6 < 75.0
+
+============================================================
+CASE 18/24: [S075] - Category: SEMANTIC_WORDING_VARIATION
+============================================================
+Query:              'Retrieve the writeup on student team collaboration'
+Expected Document:  CampusConnect_Report.pdf
+Actual Document:    Resume.pdf
+Status:             WRONG_NO_MATCH
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'student team collaboration'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  LOW
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Resume.pdf (Score: 30.66) [Folder: College]
+      Signals: FTS=0.0, Name=40.0, Stem=49.09, Folder=57.14, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Resume.pdf (Score: 28.76) [Folder: Downloads]
+      Signals: FTS=0.0, Name=40.0, Stem=49.09, Folder=44.44, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Machine_Learning_Notes.txt (Score: 28.04) [Folder: Python]
+      Signals: FTS=0.0, Name=42.31, Stem=41.67, Folder=60.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: System_Architecture_Spec.md (Score: 27.68) [Folder: Python]
+      Signals: FTS=0.0, Name=41.51, Stem=40.0, Folder=60.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Python_Backend_Guide.md (Score: 26.61) [Folder: Python]
+      Signals: FTS=0.0, Name=36.73, Stem=39.13, Folder=60.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc was NOT in returned candidates at all!
+
+============================================================
+CASE 19/24: [S076] - Category: SEMANTIC_WORDING_VARIATION
+============================================================
+Query:              'Show me the guide for sprint retrospectives'
+Expected Document:  Agile_Methodologies.docx
+Actual Document:    Internship_Report.pdf
+Status:             WRONG_NO_MATCH
+Expected Behavior:  SELECT | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'sprint retrospectives'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  LOW
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Internship_Report.pdf (Score: 30.32) [Folder: Internship]
+      Signals: FTS=0.0, Name=42.86, Stem=47.37, Folder=60.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Project_Report.docx (Score: 29.34) [Folder: CampusConnect]
+      Signals: FTS=0.0, Name=45.0, Stem=52.5, Folder=38.1, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Meeting_Notes.txt (Score: 28.82) [Folder: Desktop]
+      Signals: FTS=0.0, Name=42.11, Stem=45.0, Folder=57.14, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Internship_Report_External.pdf (Score: 28.15) [Folder: Internship]
+      Signals: FTS=0.0, Name=39.22, Stem=42.55, Folder=60.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: System_Architecture_Spec.md (Score: 27.45) [Folder: Python]
+      Signals: FTS=0.0, Name=45.83, Stem=48.89, Folder=36.36, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc was NOT in returned candidates at all!
+
+============================================================
+CASE 20/24: [S078] - Category: WHERE_DID_I_SAVE
+============================================================
+Query:              'Where is Vijay_Resume stored?'
+Expected Document:  Vijay_Resume.pdf
+Actual Document:    Resume.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  LOCATION | Actual: LOCATION
+Parsed Intent:      LOCATION (Confidence: HIGH)
+Parsed Query:       'Vijay_Resume stored'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Resume.pdf (Score: 45.95) [Folder: College]
+      Signals: FTS=0.0, Name=85.5, Stem=90.0, Folder=36.36, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Resume.pdf (Score: 45.12) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=90.0, Folder=30.77, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Vijay_Resume.pdf (Score: 45.12) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=0.0, Name=85.71, Stem=90.0, Folder=30.77, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Nikhil_CS_Resume.pdf (Score: 30.33) [Folder: Downloads]
+      Signals: FTS=0.0, Name=51.28, Stem=57.14, Folder=30.77, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: System_Architecture_Spec.md (Score: 25.02) [Folder: Python]
+      Signals: FTS=0.0, Name=43.48, Stem=41.86, Folder=36.36, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Vijay_Resume.pdf' ranked below top because Score 45.12 < 45.95
+
+============================================================
+CASE 21/24: [S085] - Category: SEARCH_PLUS_LOCATION
+============================================================
+Query:              'Find Vijay_Resume and tell me where it is located'
+Expected Document:  Vijay_Resume.pdf
+Actual Document:    Resume.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  LOCATION | Actual: LOCATION
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'Vijay_Resume located'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   LOCATION
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Resume.pdf (Score: 48.0) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=90.0, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Vijay_Resume.pdf (Score: 48.0) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=0.0, Name=85.71, Stem=90.0, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Resume.pdf (Score: 45.5) [Folder: College]
+      Signals: FTS=0.0, Name=85.5, Stem=90.0, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Nikhil_CS_Resume.pdf (Score: 32.5) [Folder: Downloads]
+      Signals: FTS=0.0, Name=50.0, Stem=55.56, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Q3_Budget_Summary.pdf (Score: 25.06) [Folder: Downloads]
+      Signals: FTS=0.0, Name=39.02, Stem=37.84, Folder=50.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Vijay_Resume.pdf' ranked below top because Score 48.0 < 48.0
+
+============================================================
+CASE 22/24: [S086] - Category: SEARCH_PLUS_LOCATION
+============================================================
+Query:              'Find CampusConnect_Report and show file path'
+Expected Document:  CampusConnect_Report.pdf
+Actual Document:    Project_Report.docx
+Status:             WRONG_DOCUMENT
+Expected Behavior:  LOCATION | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'CampusConnect_Report and show path'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Project_Report.docx (Score: 83.47) [Folder: CampusConnect]
+      Signals: FTS=100.0, Name=85.5, Stem=85.5, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: CampusConnect_Report.pdf (Score: 79.27) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=44.44, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Internship_Report.pdf (Score: 69.67) [Folder: Internship]
+      Signals: FTS=84.0, Name=85.5, Stem=85.5, Folder=40.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Internship_Report_External.pdf (Score: 44.48) [Folder: Internship]
+      Signals: FTS=0.0, Name=85.5, Stem=46.15, Folder=40.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: System_Architecture_Spec.md (Score: 27.41) [Folder: Python]
+      Signals: FTS=0.0, Name=38.3, Stem=40.91, Folder=60.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'CampusConnect_Report.pdf' ranked below top because Score 79.27 < 83.47
+
+============================================================
+CASE 23/24: [S088] - Category: SEARCH_PLUS_LOCATION
+============================================================
+Query:              'Find Internship_Report and give folder'
+Expected Document:  Internship_Report.pdf
+Actual Document:    Internship_Report_External.pdf
+Status:             WRONG_DOCUMENT
+Expected Behavior:  LOCATION | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'Internship_Report and give folder'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Internship_Report_External.pdf (Score: 90.0) [Folder: Internship]
+      Signals: FTS=100.0, Name=100.0, Stem=100.0, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: Internship_Report.pdf (Score: 87.6) [Folder: Internship] *** EXPECTED ***
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Vijay_Resume.pdf (Score: 47.14) [Folder: Downloads]
+      Signals: FTS=84.0, Name=34.48, Stem=32.0, Folder=42.86, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: CampusConnect_Report.pdf (Score: 44.9) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=42.86, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Project_Report.docx (Score: 43.09) [Folder: CampusConnect]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=30.77, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'Internship_Report.pdf' ranked below top because Score 87.6 < 90.0
+
+============================================================
+CASE 24/24: [S090] - Category: SEARCH_PLUS_SUMMARIZE
+============================================================
+Query:              'Find CampusConnect_Report and give summary'
+Expected Document:  CampusConnect_Report.pdf
+Actual Document:    Project_Report.docx
+Status:             WRONG_DOCUMENT
+Expected Behavior:  SUMMARIZE | Actual: FIND
+Parsed Intent:      FIND (Confidence: HIGH)
+Parsed Query:       'CampusConnect_Report and give summary'
+Folder Constraint:  None
+Extension Filter:   None
+Follow-up Action:   None
+Date Constraint:    None
+Ranker Confidence:  AMBIGUOUS
+Total Evaluated:    16
+Top 5 Candidates:
+  #1: Project_Report.docx (Score: 83.47) [Folder: CampusConnect]
+      Signals: FTS=100.0, Name=85.5, Stem=85.5, Folder=100.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #2: CampusConnect_Report.pdf (Score: 77.6) [Folder: Downloads] *** EXPECTED ***
+      Signals: FTS=92.0, Name=100.0, Stem=100.0, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #3: Internship_Report.pdf (Score: 69.67) [Folder: Internship]
+      Signals: FTS=84.0, Name=85.5, Stem=85.5, Folder=40.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #4: Internship_Report_External.pdf (Score: 44.48) [Folder: Internship]
+      Signals: FTS=0.0, Name=85.5, Stem=46.15, Folder=40.0, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  #5: Q3_Budget_Summary.pdf (Score: 43.47) [Folder: Downloads]
+      Signals: FTS=0.0, Name=85.5, Stem=85.5, Folder=33.33, Ext=0.0
+      Matches: ExactName=False, ExactStem=False, ExactFolder=False
+  >>> Expected doc 'CampusConnect_Report.pdf' ranked below top because Score 77.6 < 83.47

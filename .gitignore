@@ -1,0 +1,48 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Frontend
+node_modules/
+dist/
+frontend/dist/
+
+# Rust / Tauri
+target/
+src-tauri/target/
+
+# Generated backend
+backend-dist/
+build/
+*.spec
+
+# Local databases and indexes
+data/
+backend/data/
+chroma_db/
+*.db
+*.sqlite
+*.sqlite3
+
+# Models and installers
+*.gguf
+*.exe
+*.msi
+
+# IDE / system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test documents
+test_files/

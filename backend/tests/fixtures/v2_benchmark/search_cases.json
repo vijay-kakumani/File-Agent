@@ -1,0 +1,1145 @@
+[
+  {
+    "id": "S-GOLD-05",
+    "category": "EXACT_FILENAME",
+    "query": "Find my resume",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Vijay_Resume.pdf",
+      "Resume.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": true
+  },
+  {
+    "id": "S002",
+    "category": "EXACT_FILENAME",
+    "query": "Machine_Learning_Notes.txt",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S003",
+    "category": "EXACT_FILENAME",
+    "query": "Agile_Methodologies.docx",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": ".docx",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S004",
+    "category": "EXACT_FILENAME",
+    "query": "Q3_Budget_Summary.pdf",
+    "expected_intent": "FIND",
+    "expected_document": "Q3_Budget_Summary.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S005",
+    "category": "PARTIAL_FILENAME",
+    "query": "CampusConnect",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S006",
+    "category": "PARTIAL_FILENAME",
+    "query": "Machine_Learning",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S007",
+    "category": "PARTIAL_FILENAME",
+    "query": "Budget_Summary",
+    "expected_intent": "FIND",
+    "expected_document": "Q3_Budget_Summary.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S008",
+    "category": "PARTIAL_FILENAME",
+    "query": "AWS_Cloud",
+    "expected_intent": "FIND",
+    "expected_document": "AWS_Cloud_Practitioner_Certificate.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S-GOLD-03",
+    "category": "FILENAME_TYPO",
+    "query": "Find Nikil CS",
+    "expected_intent": "FIND",
+    "expected_document": "Nikhil_CS_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": true
+  },
+  {
+    "id": "S010",
+    "category": "FILENAME_TYPO",
+    "query": "CampussConnect_Report.pdf",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S011",
+    "category": "FILENAME_TYPO",
+    "query": "Vjay_Resume.pdf",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S012",
+    "category": "FILENAME_TYPO",
+    "query": "Machne_Learning_Notes.txt",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S013",
+    "category": "MISSING_CHARACTER",
+    "query": "Vijay_Resum.pdf",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S014",
+    "category": "MISSING_CHARACTER",
+    "query": "CampuConnect_Report.pdf",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S015",
+    "category": "MISSING_CHARACTER",
+    "query": "Agil_Methodologies.docx",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": ".docx",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S016",
+    "category": "MISSING_CHARACTER",
+    "query": "Machin_Learning_Notes.txt",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S017",
+    "category": "EXTRA_CHARACTER",
+    "query": "Vijay__Resume.pdf",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S018",
+    "category": "EXTRA_CHARACTER",
+    "query": "CampusConnectt_Report.pdf",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S019",
+    "category": "EXTRA_CHARACTER",
+    "query": "Agilee_Methodologies.docx",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": ".docx",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S020",
+    "category": "EXTRA_CHARACTER",
+    "query": "Machinee_Learning_Notes.txt",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S021",
+    "category": "TRANSPOSED_CHARACTERS",
+    "query": "Viayj_Resume.pdf",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S022",
+    "category": "TRANSPOSED_CHARACTERS",
+    "query": "CampuScnnect_Report.pdf",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S023",
+    "category": "TRANSPOSED_CHARACTERS",
+    "query": "Agiel_Methodologies.docx",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": ".docx",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S024",
+    "category": "TRANSPOSED_CHARACTERS",
+    "query": "Machnie_Learning_Notes.txt",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S025",
+    "category": "BAD_GRAMMAR",
+    "query": "find resume for vijay please give",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S026",
+    "category": "BAD_GRAMMAR",
+    "query": "where report internship is",
+    "expected_intent": "LOCATION",
+    "expected_document": "Internship_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "S027",
+    "category": "BAD_GRAMMAR",
+    "query": "can get me agile docx",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": ".docx",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S028",
+    "category": "BAD_GRAMMAR",
+    "query": "me want machine learn notes",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S029",
+    "category": "SHORTHAND",
+    "query": "ml notes",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S030",
+    "category": "SHORTHAND",
+    "query": "cc report",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S031",
+    "category": "SHORTHAND",
+    "query": "intern rept",
+    "expected_intent": "FIND",
+    "expected_document": "Internship_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S032",
+    "category": "SHORTHAND",
+    "query": "agile doc",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S-GOLD-01",
+    "category": "CONVERSATIONAL_LANGUAGE",
+    "query": "Can you find the doc about CampusConnect?",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": true
+  },
+  {
+    "id": "S034",
+    "category": "CONVERSATIONAL_LANGUAGE",
+    "query": "Could you please locate the file named Vijay_Resume?",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S035",
+    "category": "CONVERSATIONAL_LANGUAGE",
+    "query": "I'm looking for the document on Agile methodologies",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S036",
+    "category": "CONVERSATIONAL_LANGUAGE",
+    "query": "Would you mind finding my machine learning notes?",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S037",
+    "category": "FILLER_HEAVY_LANGUAGE",
+    "query": "Um like can you basically find that document called Vijay_Resume you know",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S038",
+    "category": "FILLER_HEAVY_LANGUAGE",
+    "query": "So like I was wondering if you could find CampusConnect_Report",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S039",
+    "category": "FILLER_HEAVY_LANGUAGE",
+    "query": "Uh hey just find the Agile document please",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S040",
+    "category": "FILLER_HEAVY_LANGUAGE",
+    "query": "Actually I really need you to look up the machine learning text file",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S041",
+    "category": "VAGUE_MEMORY",
+    "query": "That PDF I downloaded with my name on it",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S042",
+    "category": "VAGUE_MEMORY",
+    "query": "The document about university student collaboration",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S043",
+    "category": "VAGUE_MEMORY",
+    "query": "The text file about regression and gradient descent",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S044",
+    "category": "VAGUE_MEMORY",
+    "query": "That report on Scrum and sprint planning",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S045",
+    "category": "CONTENT_DESCRIPTION",
+    "query": "I don't remember the filename but it was about Python and React.",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Vijay_Resume.pdf",
+      "CampusConnect_Report.pdf",
+      "Project_Report.docx",
+      "Internship_Report.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S046",
+    "category": "CONTENT_DESCRIPTION",
+    "query": "document mentioning PostgreSQL and React projects",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "CampusConnect_Report.pdf",
+      "Vijay_Resume.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S047",
+    "category": "CONTENT_DESCRIPTION",
+    "query": "notes on linear regression and neural networks",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S048",
+    "category": "CONTENT_DESCRIPTION",
+    "query": "file detailing the 8-week internship at TechCorp",
+    "expected_intent": "FIND",
+    "expected_document": "Internship_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S049",
+    "category": "FOLDER_CONSTRAINED",
+    "query": "resume downloads",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Resume.pdf",
+      "Vijay_Resume.pdf"
+    ],
+    "expected_folder": "Downloads",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S050",
+    "category": "FOLDER_CONSTRAINED",
+    "query": "CampusConnect in Downloads",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": "Downloads",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S051",
+    "category": "FOLDER_CONSTRAINED",
+    "query": "Agile in College",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": "College",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S052",
+    "category": "FOLDER_CONSTRAINED",
+    "query": "ML notes in Projects",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": "Projects",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S053",
+    "category": "C_DRIVE_CONSTRAINT",
+    "query": "find resume in C drive",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Resume.pdf",
+      "Vijay_Resume.pdf"
+    ],
+    "expected_folder": "C_drive_sim",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S054",
+    "category": "C_DRIVE_CONSTRAINT",
+    "query": "internship report on C:",
+    "expected_intent": "FIND",
+    "expected_document": "Internship_Report.pdf",
+    "expected_folder": "C_drive_sim",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S055",
+    "category": "C_DRIVE_CONSTRAINT",
+    "query": "CampusConnect on C drive",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": "C_drive_sim",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S056",
+    "category": "C_DRIVE_CONSTRAINT",
+    "query": "Vijay_Resume in C:",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": "C_drive_sim",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S057",
+    "category": "D_DRIVE_CONSTRAINT",
+    "query": "Agile document on D drive",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": "D_drive_sim",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S058",
+    "category": "D_DRIVE_CONSTRAINT",
+    "query": "CampusConnect project report on D:",
+    "expected_intent": "FIND",
+    "expected_document": "Project_Report.docx",
+    "expected_folder": "D_drive_sim",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S059",
+    "category": "D_DRIVE_CONSTRAINT",
+    "query": "Machine learning notes on D:",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": "D_drive_sim",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S060",
+    "category": "D_DRIVE_CONSTRAINT",
+    "query": "Resume on D drive",
+    "expected_intent": "FIND",
+    "expected_document": "Resume.pdf",
+    "expected_folder": "D_drive_sim",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S-GOLD-04",
+    "category": "DEEP_NESTED_FOLDER",
+    "query": "Find my internship report in D:\\College\\4th Year\\Internship",
+    "expected_intent": "FIND",
+    "expected_document": "Internship_Report_External.pdf",
+    "expected_folder": "College/4th_Year/Internship",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": true
+  },
+  {
+    "id": "S062",
+    "category": "DEEP_NESTED_FOLDER",
+    "query": "Find report in Documents/College/4th_Year/Internship",
+    "expected_intent": "FIND",
+    "expected_document": "Internship_Report.pdf",
+    "expected_folder": "College/4th_Year/Internship",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S063",
+    "category": "DEEP_NESTED_FOLDER",
+    "query": "Project_Report in College/Projects/CampusConnect",
+    "expected_intent": "FIND",
+    "expected_document": "Project_Report.docx",
+    "expected_folder": "College/Projects/CampusConnect",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S064",
+    "category": "DEEP_NESTED_FOLDER",
+    "query": "Agile doc in College/Agile",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": "College/Agile",
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S065",
+    "category": "FILE_TYPE_CONSTRAINT",
+    "query": "find my resume pdf",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Vijay_Resume.pdf",
+      "Resume.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S066",
+    "category": "FILE_TYPE_CONSTRAINT",
+    "query": "CampusConnect docx",
+    "expected_intent": "FIND",
+    "expected_document": "Project_Report.docx",
+    "expected_folder": null,
+    "expected_extension": ".docx",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S067",
+    "category": "FILE_TYPE_CONSTRAINT",
+    "query": "machine learning txt file",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S068",
+    "category": "FILE_TYPE_CONSTRAINT",
+    "query": "Python backend guide md",
+    "expected_intent": "FIND",
+    "expected_document": "Python_Backend_Guide.md",
+    "expected_folder": null,
+    "expected_extension": ".md",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S-GOLD-02",
+    "category": "MULTIPLE_CONSTRAINTS",
+    "query": "I have a PDF somewhere in Downloads about my internship, can you find it?",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Vijay_Resume.pdf",
+      "Internship_Report.pdf"
+    ],
+    "expected_folder": "Downloads",
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": true
+  },
+  {
+    "id": "S070",
+    "category": "MULTIPLE_CONSTRAINTS",
+    "query": "Find docx report in College/Projects/CampusConnect",
+    "expected_intent": "FIND",
+    "expected_document": "Project_Report.docx",
+    "expected_folder": "College/Projects/CampusConnect",
+    "expected_extension": ".docx",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S071",
+    "category": "MULTIPLE_CONSTRAINTS",
+    "query": "Find txt notes about Python in Projects",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": "Projects",
+    "expected_extension": ".txt",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S072",
+    "category": "MULTIPLE_CONSTRAINTS",
+    "query": "Find pdf budget in Downloads",
+    "expected_intent": "FIND",
+    "expected_document": "Q3_Budget_Summary.pdf",
+    "expected_folder": "Downloads",
+    "expected_extension": ".pdf",
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S073",
+    "category": "SEMANTIC_WORDING_VARIATION",
+    "query": "Find my CV",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Vijay_Resume.pdf",
+      "Resume.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S074",
+    "category": "SEMANTIC_WORDING_VARIATION",
+    "query": "Find my curriculum vitae",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Vijay_Resume.pdf",
+      "Resume.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S075",
+    "category": "SEMANTIC_WORDING_VARIATION",
+    "query": "Retrieve the writeup on student team collaboration",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S076",
+    "category": "SEMANTIC_WORDING_VARIATION",
+    "query": "Show me the guide for sprint retrospectives",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SELECT",
+    "is_golden": false
+  },
+  {
+    "id": "S077",
+    "category": "WHERE_DID_I_SAVE",
+    "query": "Where did I save my CampusConnect report?",
+    "expected_intent": "LOCATION",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "S078",
+    "category": "WHERE_DID_I_SAVE",
+    "query": "Where is Vijay_Resume stored?",
+    "expected_intent": "LOCATION",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "S079",
+    "category": "WHERE_DID_I_SAVE",
+    "query": "Where did I put the internship report?",
+    "expected_intent": "LOCATION",
+    "expected_document": "Internship_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "S080",
+    "category": "WHERE_DID_I_SAVE",
+    "query": "Where are my machine learning notes saved?",
+    "expected_intent": "LOCATION",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "S-GOLD-06",
+    "category": "SEARCH_PLUS_OPEN",
+    "query": "Find my resume and open it",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Vijay_Resume.pdf",
+      "Resume.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "OPEN",
+    "is_golden": true
+  },
+  {
+    "id": "S082",
+    "category": "SEARCH_PLUS_OPEN",
+    "query": "Find Vijay_Resume.pdf and launch it",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "OPEN",
+    "is_golden": false
+  },
+  {
+    "id": "S083",
+    "category": "SEARCH_PLUS_OPEN",
+    "query": "Locate CampusConnect_Report and open",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "OPEN",
+    "is_golden": false
+  },
+  {
+    "id": "S084",
+    "category": "SEARCH_PLUS_OPEN",
+    "query": "Find Machine_Learning_Notes.txt and view it",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "OPEN",
+    "is_golden": false
+  },
+  {
+    "id": "S085",
+    "category": "SEARCH_PLUS_LOCATION",
+    "query": "Find Vijay_Resume and tell me where it is located",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "S086",
+    "category": "SEARCH_PLUS_LOCATION",
+    "query": "Find CampusConnect_Report and show file path",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "S087",
+    "category": "SEARCH_PLUS_LOCATION",
+    "query": "Find Agile_Methodologies and show location",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "S088",
+    "category": "SEARCH_PLUS_LOCATION",
+    "query": "Find Internship_Report and give folder",
+    "expected_intent": "FIND",
+    "expected_document": "Internship_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "LOCATION",
+    "is_golden": false
+  },
+  {
+    "id": "S089",
+    "category": "SEARCH_PLUS_SUMMARIZE",
+    "query": "Find Vijay_Resume and summarize it",
+    "expected_intent": "FIND",
+    "expected_document": "Vijay_Resume.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SUMMARIZE",
+    "is_golden": false
+  },
+  {
+    "id": "S090",
+    "category": "SEARCH_PLUS_SUMMARIZE",
+    "query": "Find CampusConnect_Report and give summary",
+    "expected_intent": "FIND",
+    "expected_document": "CampusConnect_Report.pdf",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SUMMARIZE",
+    "is_golden": false
+  },
+  {
+    "id": "S091",
+    "category": "SEARCH_PLUS_SUMMARIZE",
+    "query": "Find Agile_Methodologies and summarize",
+    "expected_intent": "FIND",
+    "expected_document": "Agile_Methodologies.docx",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SUMMARIZE",
+    "is_golden": false
+  },
+  {
+    "id": "S092",
+    "category": "SEARCH_PLUS_SUMMARIZE",
+    "query": "Find Machine_Learning_Notes and summarize",
+    "expected_intent": "FIND",
+    "expected_document": "Machine_Learning_Notes.txt",
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "SUMMARIZE",
+    "is_golden": false
+  },
+  {
+    "id": "S093",
+    "category": "AMBIGUOUS_SEARCH",
+    "query": "Find Resume",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Resume.pdf",
+      "Vijay_Resume.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "AMBIGUOUS",
+    "is_golden": false
+  },
+  {
+    "id": "S094",
+    "category": "AMBIGUOUS_SEARCH",
+    "query": "Find Resume.pdf",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Resume.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "AMBIGUOUS",
+    "is_golden": false
+  },
+  {
+    "id": "S095",
+    "category": "AMBIGUOUS_SEARCH",
+    "query": "Find Project_Report",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Project_Report.docx",
+      "CampusConnect_Report.pdf"
+    ],
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "AMBIGUOUS",
+    "is_golden": false
+  },
+  {
+    "id": "S096",
+    "category": "AMBIGUOUS_SEARCH",
+    "query": "Find Notes",
+    "expected_intent": "FIND",
+    "expected_document": [
+      "Meeting_Notes.txt",
+      "Machine_Learning_Notes.txt"
+    ],
+    "expected_folder": null,
+    "expected_extension": null,
+    "expected_behavior": "AMBIGUOUS",
+    "is_golden": false
+  },
+  {
+    "id": "S097",
+    "category": "NO_RESULT_SEARCH",
+    "query": "Find NonExistent_File_12345.pdf",
+    "expected_intent": "FIND",
+    "expected_document": null,
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "NO_RESULT",
+    "is_golden": false
+  },
+  {
+    "id": "S098",
+    "category": "NO_RESULT_SEARCH",
+    "query": "QuantumTeleportationManual.docx",
+    "expected_intent": "FIND",
+    "expected_document": null,
+    "expected_folder": null,
+    "expected_extension": ".docx",
+    "expected_behavior": "NO_RESULT",
+    "is_golden": false
+  },
+  {
+    "id": "S099",
+    "category": "NO_RESULT_SEARCH",
+    "query": "RecipeForChocolateCake.pdf",
+    "expected_intent": "FIND",
+    "expected_document": null,
+    "expected_folder": null,
+    "expected_extension": ".pdf",
+    "expected_behavior": "NO_RESULT",
+    "is_golden": false
+  },
+  {
+    "id": "S100",
+    "category": "NO_RESULT_SEARCH",
+    "query": "Find MarsRoverTelemetry.txt",
+    "expected_intent": "FIND",
+    "expected_document": null,
+    "expected_folder": null,
+    "expected_extension": ".txt",
+    "expected_behavior": "NO_RESULT",
+    "is_golden": false
+  }
+]
